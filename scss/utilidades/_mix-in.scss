@@ -1,0 +1,14 @@
+@mixin margen ($margin, $padding) {
+   margin: $margin;
+   padding: $padding;
+}
+
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+
+@mixin center ($center){
+    text-align: $center;
+}

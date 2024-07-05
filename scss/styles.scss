@@ -1,0 +1,131 @@
+@import "../scss/utilidades/variables";
+@import "../scss/utilidades/mix-in";
+
+
+
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    @include margen (0, 0);
+    background-color: $color_claro;
+}
+
+header{
+    h1{
+        background-color: $color_principal;
+        color: $color_claro;
+        @include center (center);
+        font-size: $font_cuarta;
+        @include margen (10px 0,10px 0);
+    }
+    .banner{
+        @include sizes (400px, 120px);
+        @include margen (100%, 0);
+        display: block;
+        margin: 10px auto;
+        border: 20px solid #D8D9D9;
+    }
+
+    
+}
+
+nav{
+    ul{
+        list-style-type: none;
+        @include center (center);
+        @include margen (10px, 10px);
+        li{
+            display: block;
+            margin-bottom: 0;
+            a{
+              color: $color_principal;
+              text-decoration: none;
+              font-size: $font_cuarta;
+            }
+        }
+    }
+}
+
+
+main{    
+    .presupuesto{
+        display: flex;
+        height: 100%;
+        text-align: center;
+        @include margen (80px, 10px);
+        font-size: $font_primera; 
+    }
+    .intro{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        @include margen (10px, 0);
+        @include center (center); 
+        font-size: $font_primera;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: space-between;
+        img{
+            @include sizes (100%, auto);
+            padding: 2px;  
+        }
+    }
+    .info{
+        @include center (center);
+        font-size: $font_tercera;
+        color: $color_principal;
+        @include margen (20px, 0);
+    }
+
+    .formas{
+        @include center (center);
+        font-style: italic;
+        text-decoration: underline;
+        font-size: $font_cuarta;
+        color: $color_principal;
+        @include margen (5%, 5%);
+    }
+    .contact {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: $font_primera;
+       height: 100%;
+       @include margen (20px, 0);
+    }
+    .somos {
+        @extend .presupuesto;
+        font-style: italic;
+    }
+
+}
+
+footer{
+    p{
+      margin-top: 10%;
+      color: $color_claro;
+      background-color: $color_secundario;
+      @include center (center);
+    } 
+}
+
+section{
+    .carousel-item img {
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+    }
+}
+
+div{
+    .descri {
+        @include center (center);
+        background-color: $color_secundario;
+        color: $color_claro;
+    }
+}
+
+
+@import "../scss/media-queries/movil";
+

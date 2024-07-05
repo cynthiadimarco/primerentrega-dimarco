@@ -3,93 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--link de mi css-->
-
+     <!--enlace a javascript--> 
+    <script defer src="./js/script.js"></script>
+  
+   <title>Herreria Rojas</title>  
+   
+ 
+   <!--link de mi css-->
     <link rel="stylesheet" href="css/main.css">
-
-    <title>Herreria Rojas</title>
+ 
 </head>
 
-<body>   
-<!-- Banner principal de pagina -->
+<body>
 
-   <div> 
-    <img src="../proyecto-uno/img/Logo.jpeg" alt="Banner principal Herreria Rojas" class="banner">
+   <!-- Banner principal de pagina -->
+  <header> 
+     <img src="img/logo.jpeg" alt="Banner principal Herreria Rojas" class="banner">
+    <h1> Bienvenidos a nuestro espacio </h1>
+  </header>
 
-<header class="bienvenidos">    
-      <h1> Bienvenidos a nuestro espacio </h1>
-</header>
+  <main>
 
-   </div>
-</body>
+     <!--link a la pagina quienes somos-->
 
-<main>
-
-<!--link quienes somos-->
- <nav>
-    <ul>
-        <li><a href="pages/quienes-somos.html">¿Quienes somos?</a>
-        </li>  
-    </ul>
- </nav>
-   <p>Somos una empresa familiar de herrería, de más de 35 años de experiencia. Nuestro compromiso con la calidad, la creatividad y el servicio al cliente nos distingue en el mercado.</p>
-
-<!--link que hacemos-->
- <nav>
-    <ul>
-        <li><a href="pages/que-hacemos.html">¿Que hacemos?</a>
-        </li>
-    </ul>
- </nav>      
-
-<!--imagenes de diferentes trabajos realizados con sus descripciones-->
-
-<header class="contenedor">
-    <div>
-        <img src="img/mesa-silla.jpeg" alt="Imagen ilustrativa de trabajo realizado de mesas y sillas">
-        <p> Mesas y sillas</p>
-    </div>
-    <div> 
-       <img src="img/puerta-corrediza.jpeg" alt="Imagen ilustrativa de trabajo realizado de puerta corrediza">
-       <p> Puertas corredizas </p>
-    </div>
-    <div> 
-       <img src="img/Ventana.jpeg" alt="Imagen ilustrativa de trabajo realizado de ventana">
-       <p> Ventanas </p>
-    </div>
-
-</header>
-</main>
-    
-
-<h2>
     <nav>
         <ul>
-            <li><a class="presupuesto" href="pages/solicitar-presupuesto.html">
-            Solicitar presupuesto </a>
-            </li>
-            <li><a class="contacto" href="pages/contacto.html">Contacto</a>
-            </li>
+              <li><a href="pages/quienes-somos.html">¿Quienes somos?</a></li>  
+        </ul>
+    </nav>
+   
+    <p class="intro">Somos una empresa familiar de herrería, de más de 35 años de experiencia.</p>
+    <p class="intro"> Nuestro compromiso con la calidad, la creatividad y el servicio al cliente nos distingue en el mercado.</p>
+
+     <!--link a la pagina que hacemos-->
+    <nav>
+        <ul>
+             <li><a href="pages/que-hacemos.html">¿Que hacemos? </a></li>
+        </ul>
+    </nav>
+
+     <!--imagenes de diferentes trabajos realizados con sus descripciones-->
+
+    <section class="contenedor">
+        <div> 
+            <img src="img/mesa-silla.jpeg" alt="Imagen ilustrativa de trabajo realizado de mesas y sillas">
+            <p class="descri"> Mesas y sillas.</p>
+        </div>
+        <div> 
+            <img src="img/puerta-corrediza.jpeg" alt="Imagen ilustrativa de trabajo realizado de puerta corrediza">
+            <p class="descri"> Puertas corredizas </p>
+        </div>
+        <div> 
+            <img src="img/ventana.jpeg" alt="Imagen ilustrativa de trabajo realizado de ventana">
+            <p class="descri"> Ventanas </p>
+        </div>
+
+    </section>
+
+     <!--link para solicitar presupuesto y contacto-->
+    <nav>
+        <ul>
+            <li><a href="pages/solicitar-presupuesto.html">Solicitar presupuesto</a></li>
+            <li><a  href="pages/contacto.html">Contacto</a></li>
         </ul>
     </nav>  
-</h2> 
 
-<!--direccion y horarios de atencion-->
+     <!--direccion y horarios de atencion-->
 
-<main>
-    <section>
-      <h2>Dirección: Av. Siempre Viva 123 </h2>
-      <h2>Horario de atención: 8:00 a 20:00</h2>  
+    <section class="info">
+         <h2> Dirección: Av. Siempre Viva 123 <br>
+              Horario de atención: 8:00 a 20:00</h2>  
     </section>
-</main>
 
-<footer>
-    <p>Derechos reservados</p>
-</footer>
+  </main>
 
 
+     <footer>
+         <p>&copy; 2024 Todos los derechos reservados.</p>
+      </footer>
 
-</html>
 
 </body>
+</html>
+
+
