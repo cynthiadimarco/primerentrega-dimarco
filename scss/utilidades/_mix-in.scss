@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin margen ($margin, $padding) {
    margin: $margin;
    padding: $padding;
@@ -11,4 +12,19 @@
 
 @mixin center ($center){
     text-align: $center;
+=======
+@mixin margen ($margin, $padding) {
+   margin: $margin;
+   padding: $padding;
+}
+
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+
+@mixin center ($center){
+    text-align: $center;
+>>>>>>> d50fb22af035f1fd3627cb591a84e7ec8d1d4f7d
 }

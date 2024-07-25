@@ -129,7 +129,35 @@ div{
     }
 }
 
+// SCSS para el botón de bienvenida
+#welcomeButton {
+    background-color: $color_principal; // Color de fondo principal
+    color: $color_claro; // Color del texto
+    border: none;
+    padding: 12px 24px; // Ajusta el tamaño del botón
+    border-radius: 8px; // Bordes redondeados
+    cursor: pointer;
+    font-size: $font_tercera;
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra para efecto de profundidad
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; // Transiciones suaves
 
+    // Efecto hover
+    &:hover {
+        background-color: darken($color_principal, 10%); // Oscurece el color de fondo
+        transform: scale(1.1); // Aumenta el tamaño del botón
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); // Sombra más pronunciada
+    }
+
+    // Efecto al hacer clic
+    &:active {
+        background-color: darken($color_principal, 20%); // Aún más oscuro al hacer clic
+        transform: scale(0.95); // Reduce el tamaño del botón
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); // Sombra más sutil
+    }
+}
 
 // Estilos adicionales
 
@@ -159,6 +187,21 @@ div{
     display: none;
 }
 
+#listaTrabajos {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    li {
+        background-color: $color_secundario;
+        color: $color_claro;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        &:nth-child(even) {
+            background-color: darken($color_secundario, 10%);
+        }
+    }
+}
 
 #contactForm {
     background-color: #fff;

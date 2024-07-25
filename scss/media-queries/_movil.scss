@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     header{
         h1{
@@ -69,3 +70,76 @@
     }
     
 }
+=======
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    header{
+        h1{
+            background-color: $color_claro;
+            color: $color_secundario;
+            font-size: $font_cuarta;
+            text-decoration: underline;
+        }
+        .banner{
+            @include sizes (400px, 120px);
+            @include margen (100%, auto);
+            display: block;
+            margin: 10px auto;
+            border: 20px solid #e9e3e5;
+            border-radius: 20px;
+        }
+    }
+    
+    main {
+        .intro {
+           background-color: #e9e3e5;
+           color: $color_principal;
+           font-size: $font_segunda;  
+           font-style: italic;
+        }
+        .somos {
+           text-align: center;
+           font-size: $font_segunda;
+           background-color: #e9e3e5;
+           color: $color_principal;
+        }
+        .presupuesto {
+           font-size: $font_segunda;
+           background-color: #e9e3e5;
+           color: $color_secundario;
+        }
+        .formas{
+            font-size: $font_primera;
+            background-color: $color_secundario;
+            color: #e9e3e5;
+            font-style: inherit;
+        }
+        .contact {
+            color: $color_principal;
+            font-size: $font_segunda;
+        }
+        .info {
+            font-size: 10px;
+        }
+    } 
+
+    div {
+        .descri {
+            text-align: center;
+            font-size: $font_tercera;
+            background-color: #e9e3e5;
+            color: $color_principal;
+        }
+    }
+    nav {
+        ul{
+            li{
+                a{
+                    font-size: $font_segunda;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    
+}
+>>>>>>> d50fb22af035f1fd3627cb591a84e7ec8d1d4f7d
