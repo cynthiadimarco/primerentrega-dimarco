@@ -26,6 +26,8 @@ header{
         border: 20px solid #D8D9D9;
     }
 
+   
+  
     
 }
 
@@ -45,6 +47,7 @@ nav{
         }
     }
 }
+
 
 
 main{    
@@ -125,6 +128,78 @@ div{
         color: $color_claro;
     }
 }
+
+
+
+// Estilos adicionales
+
+#welcomeButton {
+    background-color: $color_principal;
+    color: $color_claro;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: $font_tercera;
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+    &:hover {
+        background-color: darken($color_principal, 10%);
+    }
+}
+
+#additionalMessage {
+    background-color: lighten($color_principal, 40%);
+    color: $color_principal;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+
+#contactForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: $color_principal;
+        font-size: $font_tercera;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid lighten($color_principal, 40%);
+        border-radius: 5px;
+        font-size: $font_primera;
+        &:focus {
+            border-color: $color_principal;
+        }
+    }
+    button {
+        background-color: $color_secundario;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: $font_tercera;
+        &:hover {
+            background-color: darken($color_secundario, 10%);
+        }
+    }
+}
+
 
 
 @import "../scss/media-queries/movil";

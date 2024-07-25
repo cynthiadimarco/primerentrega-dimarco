@@ -22,23 +22,6 @@ header .banner {
   margin: 10px auto;
   border: 20px solid #D8D9D9;
 }
-header .boton {
-  padding: 10px 20px;
-  background-color: #284557;
-  color: #D8D9D9;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px;
-}
-header .boton:hover {
-  background-color: #284557;
-  text-align: center;
-}
 
 nav ul {
   list-style-type: none;
@@ -128,6 +111,72 @@ div .descri {
   text-align: center;
   background-color: #2B506A;
   color: #D8D9D9;
+}
+
+#welcomeButton {
+  background-color: #284557;
+  color: #D8D9D9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 20px;
+  display: block;
+  margin: 20px auto;
+}
+#welcomeButton:hover {
+  background-color: #182934;
+}
+
+#additionalMessage {
+  background-color: #84adc7;
+  color: #284557;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+
+#contactForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contactForm label {
+  display: block;
+  margin-bottom: 5px;
+  color: #284557;
+  font-size: 12px;
+}
+#contactForm input, #contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #84adc7;
+  border-radius: 5px;
+  font-size: 20px;
+}
+#contactForm input:focus, #contactForm textarea:focus {
+  border-color: #284557;
+}
+#contactForm button {
+  background-color: #2B506A;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+#contactForm button:hover {
+  background-color: #1c3546;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 600px) {
